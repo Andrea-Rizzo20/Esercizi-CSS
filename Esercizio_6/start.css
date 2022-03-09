@@ -1,0 +1,51 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "gial gial"
+    "blu aran"
+    "blu ross"
+    "blu verd";
+}
+
+#green{
+    grid-area: verd;
+}
+
+#yellow{
+    grid-area: gial;
+}
+
+#orange{
+    grid-area: aran;
+}
+
+#red{
+    grid-area: ross;
+}
+
+#blue{
+    grid-area: blu;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    flex-grow: 1;
+}
+
+#yellow ul li:first-child{
+    flex-grow: 3;
+}
+
+#red ul{
+    flex-direction: row-reverse;
+}

@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+    "verd verd verd"
+    "gial ross blu"
+    "aran aran blu";
+}
+
+#green{
+    grid-area: verd;
+}
+
+#yellow{
+    grid-area: gial;
+}
+
+#orange{
+    grid-area: aran;
+}
+
+#red{
+    grid-area: ross;
+}
+
+#blue{
+    grid-area: blu;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "prim seco"
+    "terz quar";
+}

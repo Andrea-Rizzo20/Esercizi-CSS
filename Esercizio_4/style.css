@@ -1,0 +1,105 @@
+.calcolatrice{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+    "tot tot tot tot"
+    "piu men per div"
+    "set ott nov ugu"
+    "qua cin sei ugu"
+    "uno due tre ugu"
+    "zer dott acb ugu";
+    height: 400px;
+    width: 400px;
+
+}
+span{
+    border: 1px solid grey;
+    font-weight: bold;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.opera{
+    background-color: lightgray;
+}
+#tot{
+    grid-area: tot;
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 1.5rem;
+    justify-items: end;
+    padding-right: 10px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+#piu{
+    grid-area: piu;
+}
+#men{
+    grid-area: men;
+}
+#per{
+    grid-area: per;
+}
+#div{
+    grid-area: div;
+}
+#zer{
+    grid-area: zer;
+    border-radius: 0 0 0 10px;
+    -webkit-border-radius: 0 0 0 10px;
+    -moz-border-radius: 0 0 0 10px;
+    -ms-border-radius: 0 0 0 10px;
+    -o-border-radius: 0 0 0 10px;
+}
+#uno{
+    grid-area: uno;
+}
+#due{
+    grid-area: due;
+}
+#tre{
+    grid-area: tre;
+}
+#qua{
+    grid-area: qua;
+}
+#cin{
+    grid-area: cin;
+}
+#sei{
+    grid-area: sei;
+}
+#set{
+    grid-area: set;
+}
+#ott{
+    grid-area: ott;
+}
+#nov{
+    grid-area: nov;
+}
+#dot{
+    grid-area: dott;
+}
+#acb{
+    grid-area: acb;
+}
+#ugu{
+    grid-area: ugu;
+    background-color: salmon;
+    border-radius: 0 0 10px 0;
+    -webkit-border-radius: 0 0 10px 0;
+    -moz-border-radius: 0 0 10px 0;
+    -ms-border-radius: 0 0 10px 0;
+    -o-border-radius: 0 0 10px 0;
+}
